@@ -1,0 +1,244 @@
+<!-- specialties.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atelier de Saanvi - Specialties</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+       
+        .top-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        .logo-title {
+            margin: 0;
+            text-align: right;
+            color: #FEFBF0;
+            text-decoration: none;
+            font-family: 'Alga', serif;
+        }
+        h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .container {
+            padding: 40px 60px;
+            text-align: left;
+        }
+        .container p {
+            font-size: 18px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        
+        .specialties-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .specialty-item {
+            width: 30%;
+            position: relative; 
+            text-align: left;
+        }
+        .specialty-item h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            font-family: 'Neutraface Text', sans-serif;
+            font-weight: 600;
+        }
+
+        .specialty-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            position: relative;
+        }
+        .specialties-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background-color: transparent;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-content img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .card-hover-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 72, 46, 0.8);
+            color: #FEFBF0;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            box-sizing: border-box;
+        }
+        .card-hover-info p {
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        .card:hover .card-hover-info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            padding: 20px 32px;
+            background-color: #F37761;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer-logo {
+            width: 40px; 
+            height: 30px; 
+            margin-left: 10px;
+            margin-right: 20px;
+            vertical-align: center;
+        }
+
+        .footer-content {
+            text-align: right;
+            margin-left: 20px;
+            margin-right: 18px;
+        }
+        .footer-mail {
+            width: 15px;
+            height: 10px;
+            margin-left: 5px;
+        }
+        .alga-font {
+            font-family: 'Alga', serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .neutraface-font {
+            
+            font-family: 'Neutraface Text Book Alt', sans-serif;
+        }
+        .btn {
+            background-color: #FEFBF0;
+            border: 1px solid #00482E;
+            border-color: #00482E;
+            color: #00482E;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            width: auto;
+            margin-top: 0px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00482E; 
+            color: #FEFBF0;
+        }
+        .btn:active {
+            background-color: #00482E;
+            color: #FEFBF0;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="index.html"><img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="logo"></a>
+            <h1><a href="index.html" class="logo-title">Atelier de Saanvi</a></h1>
+        </div>
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="specialties.html" class="active">Specialties</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Say Hi</a>
+            <a href="about.html">About Me</a>
+        </nav>
+
+    <div class="container">
+        <p>As a B.Des student specialising in Interaction Design, I combine creativity with technical skills in my <span class="alga-font">areas of specialties:</span></p>
+        
+        <div class="specialties-grid">
+        
+            <div class="specialty-item card">
+                <div class="card-content">
+                    <span class="neutraface-font"><h3>Graphic Design</h3></span>
+                    <img src="https://i.pinimg.com/736x/1f/48/17/1f4817c42d39a37b9539913bcb7b37fd.jpg" alt="Graphic Design">
+                </div>
+                <div class="card-hover-info">
+                    <p>I create visually compelling designs that effectively communicate messages and engage audiences, utilizing my expertise in typography, color, and layout.</p>
+                </div>
+            </div>
+    
+            <div class="specialty-item card">
+                <div class="card-content">
+                    <span class="neutraface-font"><h3>Branding & Identity</h3></span>
+                    <img src="https://i.pinimg.com/736x/0f/e1/eb/0fe1eb0c348e2c2f2c6ab8e25901d859.jpg" alt="Branding and Identity">
+                </div>
+                <div class="card-hover-info">
+                    <p>I develop cohesive brand identities that resonate with target audiences, from logo design to comprehensive brand guidelines.</p>
+                </div>
+            </div>
+    
+            <div class="specialty-item card">
+                <div class="card-content">
+                    <span class="neutraface-font"><h3>UI/UX</h3></span>
+                    <img src="https://i.pinimg.com/736x/80/8c/11/808c113c82876b013cf9fb42a09c74b4.jpg" alt="UI/UX">
+                </div>
+                <div class="card-hover-info">
+                    <p>I apply user-centered design principles to create seamless digital experiences, incorporating user research and feedback into every iteration.</p>
+                </div>
+            </div>
+        </div><br><br>
+        <h4 class="text-content" style="margin-bottom: 2px;"><span style="font-family: 'Neutraface Text'; font-weight: 200;">Check out some of my projects!</span></h4>
+        <a href="projects.html" class="btn">View</a>
+    </div>
+
+    <footer>
+        <a href="index.html">
+            <img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="footer-logo">
+        </a>
+        <div class="footer-content">
+            <p>Ready to collaborate? <img src="https://i.pinimg.com/736x/88/e3/e9/88e3e9bf220321274f4245f2d323c8f2.jpg" alt="Icon" class="footer-mail"> <a href="mailto:saanvikirand@gmail.com">saanvikirand@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

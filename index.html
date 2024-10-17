@@ -1,0 +1,196 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atelier de Saanvi - Home</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Alga:ital,wght@1,500&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Alga', serif;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #F37761;
+        }
+
+        .logo {
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+        .logo-title {
+            margin: 0;
+            text-align: right;
+            color: #FEFBF0;
+            text-decoration: none;
+        }
+
+        .top-bar h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: right;
+            color: #FEFBF0;
+        }
+
+        .tagline {
+            position: relative;
+            text-align: center;
+            margin: 60px 0 40px 0;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            padding-top: 120px;
+        }
+
+        .tagline h1 {
+            position: relative;
+            z-index: 2;
+            font-style: italic;
+            margin: 0;
+            font-weight: 500;
+            font-size: 50px;
+            color: #00482E;
+        }
+
+        .tagline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200vw;
+            height: 100%;
+            background-image: radial-gradient(
+                circle,
+                rgba(250, 128, 114, 0.6) 10%,
+                transparent 10%
+            );
+            background-size: 50px 50px;
+            background-position: calc(50px / 2) 0;
+            animation: scroll-pattern 10s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes scroll-pattern {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .text-content h4 {
+            text-align: left;
+            font-style: italic;
+            margin: 40px 0;
+            font-weight: 600;
+            color: #00482E;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+            max-width: 1200px;
+            padding: 32px;
+            justify-content: space-between;
+        }
+
+        .text-content {
+            max-width: 40%;
+            margin-right: 20px;
+            font-weight: 200;
+            color: #00482E;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+
+        footer {
+            padding: 20px 32px;
+            background-color: #F37761;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-logo {
+            width: 40px; 
+            height: 30px; 
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        .footer-content {
+            text-align: right;
+            margin-left: 20px;
+            margin-right: 18px;
+            color: #FEFBF0;
+        }
+
+        .footer-mail {
+            width: 15px;
+            height: 10px;
+            margin-left: 5px;
+        }
+
+        .alga-font {
+            font-family: 'Alga', serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="index.html"><img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="logo"></a>
+            <h1><a href="index.html" class="logo-title">Atelier de Saanvi</a></h1>
+        </div>
+    </header>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="specialties.html">Specialties</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Say Hi</a>
+            <a href="about.html">About Me</a>
+        </nav>
+        <div class="tagline">
+            <h1>Crafting Ideas Into Designs</h1>
+        </div>
+    <div class="container">
+        <div class="text-content">
+            <h4>Hello there! I'm Saanvi<br>
+            Graphic Designer and Visual Designer</h4>
+            <p>A B.Des, Interaction Design student based in Bangalore.</p>
+            <p>Not only am I a creative visual enthusiast, I'm also an avid reader!</p>
+            <p>I've explored various mediums and styles of art all throughout my life and I've currently got my heart set on pencil sketching along with <span class="alga-font">Graphic Design, Visual Design, Branding and Identity</span> and dipped my toes into <span class="alga-font">UI/UX Design and Product Design.</span></p><br><br>
+            <p>Check out some of my projects!</p>
+            <a href="projects.html" class="btn">View</a>
+        </div>
+        <img src="https://i.pinimg.com/736x/f9/05/04/f9050421125c86978d5738f4c3af3f21.jpg" alt="My Photo">
+    </div>
+
+    <footer>
+        <a href="index.html">
+            <img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="footer-logo">
+        </a>
+        <div class="footer-content">
+            <p>Ready to collaborate? <img src="https://i.pinimg.com/736x/88/e3/e9/88e3e9bf220321274f4245f2d323c8f2.jpg" alt="Icon" class="footer-mail"> <a href="mailto:saanvikirand@gmail.com">saanvikirand@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atelier de Saanvi - About Me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        .logo-title {
+            margin: 0;
+            text-align: right;
+            color: #FEFBF0;
+            text-decoration: none;
+            font-family: 'Alga', serif;
+        }
+        h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .content-box {
+            padding: 15px;
+            background-color: #FEFBF0;
+            border-radius: 8px;
+        }
+
+        footer {
+            padding: 20px 32px;
+            background-color: #F37761;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer-logo {
+            width: 40px; 
+            height: 30px; 
+            margin-left: 10px;
+            margin-right: 20px;
+            vertical-align: center;
+        }
+
+        .footer-content {
+            text-align: right;
+            margin-left: 20px;
+            margin-right: 18px;
+        }
+        .footer-mail {
+            width: 15px;
+            height: 10px;
+            margin-left: 5px;
+        }
+        
+        .btn {
+            background-color: #FEFBF0;
+            border: 1px solid #00482E;
+            border-color: #00482E;
+            color: #00482E;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            width: auto;
+            margin-top: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00482E; 
+            color: #FEFBF0;
+        }
+        .btn:active {
+            background-color: #00482E;
+            color: #FEFBF0;
+        }
+        h2 {
+            margin-top: 40px; 
+            margin-bottom: 20px; 
+            text-align: center;
+        }
+        .AI {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .PSD {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .AE {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .FIG {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .PRO {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .SKUP {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .call {
+            width: 15px;
+            height: 15px;
+            margin-right: 12px;
+        }
+        .mailgreen {
+            width: 15px;
+            height: 10px;
+            margin-right: 12px;
+        }
+        .contacts a {
+            text-decoration: underline;
+            color: #00482E;
+        }
+        .green-link {
+            color: #00482E;
+        }
+
+        .green-link:hover {
+            color: #006400;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="index.html"><img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="logo"></a>
+            <h1><a href="index.html" class="logo-title">Atelier de Saanvi</a></h1>
+        </div>
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="specialties.html">Specialties</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Say Hi</a>
+            <a href="about.html" class="active">About Me</a>
+        </nav>
+    <div class="container-wrapper">
+        <h2><span style="font-family: 'Neutraface Text'; font-style: italic; font-weight: 200;">Behind the Designs</span></h2>
+        <div class="container">
+            <div class="content-box">
+                <h3><span style="font-family: 'Neutraface Text'; font-weight: 600;">Software Skills</span></h3>
+                <p><img src="https://i.pinimg.com/736x/db/5c/ed/db5cedd1904a0b6a17d57ab9ffd7c954.jpg" alt="AI" class="AI">Illustrator</p>
+                <p><img src="https://i.pinimg.com/736x/8e/b3/f2/8eb3f2577bcda41e598bd284f649243c.jpg" alt="PSD" class="PSD">Photoshop</p>
+                <p><img src="https://i.pinimg.com/736x/d3/ff/da/d3ffda6005ddc92bd30ca8a14c0eef77.jpg" alt="AE" class="AE">After Effects</p>
+                <p><img src="https://i.pinimg.com/736x/6f/a4/b8/6fa4b8cd7aaecc2b0ab4cae0e4217173.jpg" alt="FIG" class="FIG">Figma</p>
+                <p><img src="https://i.pinimg.com/736x/1e/27/db/1e27dbdfe26d0c98268567d3baca5009.jpg" alt="PRO" class="PRO">Procreate</p>
+                <p><img src="https://i.pinimg.com/736x/b5/07/e2/b507e2556d9318e2826911775dff453f.jpg" alt="SKUP" class="SKUP">SketchUp</p>
+            </div>
+            <div class="content-box">
+                <h3><span style="font-family: 'Neutraface Text'; font-weight: 600;">Experience</span></h3>
+                <p><span style="font-family: 'Neutraface Text'; font-weight: 600;">Woooys</span><br> UI/UX Intern <br> August 2024 - October 2024 </p>
+                <p><span style="font-family: 'Neutraface Text'; font-weight: 600;">TEDX PESU</span><br> Graphic Designer <br> February 2024 - Present </p>
+                <p><span style="font-family: 'Neutraface Text'; font-weight: 600;">DSGNR</span><br> Graphic Designer <br> February 2024 - Present </p><br><br>
+            </div>
+            <div class="content-box">
+                <h3><span style="font-family: 'Neutraface Text'; font-weight: 600;">Education</span></h3>
+                <p><span style="font-family: 'Neutraface Text'; font-weight: 600;">PES University</span><br> Bachelors In Design (B.des)<br> Interaction Design<br> 2022-2026</p>
+                <p><span style="font-family: 'Neutraface Text'; font-weight: 600;">Jain PU College</span><br> PUC (PCMC)<br> 2020-2022</p><br><br>
+            </div>
+            <div class="content-box">
+                <h3><span style="font-family: 'Neutraface Text'; font-weight: 600;">Languages</span></h3>
+                <p>English - Fluent</p>
+                <p>Hindi - Conversational</p>
+                <p>Telugu - Conversational</p>
+                <p>Kannada - Conversational</p><br><br>
+            </div>
+            <div class="content-box">
+                <h3><span style="font-family: 'Neutraface Text'; font-weight: 600;">Personal Attributes</span></h3>
+                <p>Collaberative</p>
+                <p>Driven</p>
+                <p>Independent</p>
+                <p>Punctual</p><br><br>
+            </div>
+            <div class="content-box">
+                <h3><span style="font-family: 'Neutraface Text'; font-weight: 600;">Contact Me</span></h3>
+                <p><img src="https://i.pinimg.com/736x/ba/75/85/ba7585b58b5f13f4d542556a27c90c2d.jpg" alt="call icon" class="call">+91 7981265650</p>
+                <p><img src="https://i.pinimg.com/736x/14/22/f2/1422f266cebfad81dc005d81eb9eca6c.jpg" alt="mail icon" class="mailgreen"><a href="mailto:saanvikirand@gmail.com" class="green-link">saanvikirand@gmail.com</a></p><br>
+                <a href="contact.html" class="btn">Say Hi</a><br><br>
+        </div>
+        <div class="button">
+            <p><span style="font-family: 'Neutraface Text'; font-weight: 200;">Check out some of my projects!</span></p>
+            <a href="projects.html" class="btn">View</a><br><br>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html">
+            <img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="footer-logo">
+        </a>
+        <div class="footer-content">
+            <p>Ready to collaborate? <img src="https://i.pinimg.com/736x/88/e3/e9/88e3e9bf220321274f4245f2d323c8f2.jpg" alt="Icon" class="footer-mail"> <a href="mailto:saanvikirand@gmail.com">saanvikirand@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

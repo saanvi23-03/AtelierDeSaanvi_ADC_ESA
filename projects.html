@@ -1,0 +1,239 @@
+
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atelier de Saanvi - Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        .logo-title {
+            margin: 0;
+            text-align: right;
+            color: #FEFBF0;
+            text-decoration: none;
+            font-family: 'Alga', serif;
+        }
+        h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        footer {
+            padding: 20px 32px;
+            background-color: #F37761;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer-logo {
+            width: 40px; 
+            height: 30px; 
+            margin-left: 10px;
+            margin-right: 20px;
+            vertical-align: center;
+        }
+
+        .footer-content {
+            text-align: right;
+            margin-left: 20px;
+            margin-right: 18px;
+        }
+        
+        .footer-mail {
+            width: 15px;
+            height: 10px;
+            margin-left: 5px;
+        }
+
+        .slider-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            margin-top: -20px;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            width: 500%;
+            animation: slide 15s infinite;
+        }
+
+        .section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .section-1 {
+            background-color: #FEFBF0;
+        }
+
+        .section-2 {
+            background-color: #FEFBF0;
+        }
+
+        .section-3 {
+            background-color: #FEFBF0;
+        }
+
+        .section-4 {
+            background-color: #FEFBF0;
+        }
+
+        .section-5 {
+            background-color: #FEFBF0;
+        }
+
+        .content {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .section:hover .content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        
+        .content img {
+            width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        
+        @keyframes slide {
+            0% { transform: translateX(0); } 
+            20% { transform: translateX(-100vw); } 
+            40% { transform: translateX(-200vw); } 
+            60% { transform: translateX(-300vw); } 
+            80% { transform: translateX(-400vw); } 
+            100% { transform: translateX(0); }
+        }
+        h2 {
+            color: #00482E;
+            text-decoration: none;
+        }
+
+        .content p {
+            color: #00482E;
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
+            color: #00482E;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="index.html"><img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="logo"></a>
+            <h1><a href="index.html" class="logo-title">Atelier de Saanvi</a></h1>
+        </div>
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="specialties.html">Specialties</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Say Hi</a>
+            <a href="about.html">About Me</a>
+        </nav>
+        <div class="container">
+            <h2>
+                <span style="font-family: 'Neutraface Text'; font-style: italic; font-weight: 200;"> Explore my collection of </span>
+                <span style="font-family: 'Alga'; font-style: italic; font-weight: 500;">recent projects</span>
+            </h2>
+            <h4> <span style="font-family: 'Neutraface Text'; font-style: italic; font-weight: 200;">Hover to browse | Click to view</span></h4>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                
+                <div class="section section-1">
+                    <div class="content">
+                        <a href="projects_detailed.html">
+                            <img src="https://i.pinimg.com/736x/19/7e/4f/197e4fdb7213142f4c1258b1296d71f5.jpg" alt="Zine Design">
+                            <h2>Zine Design - A Day In Design School</h2>
+                            <p>Graphic Design</p>
+                        </a>
+                    </div>
+                </div>
+        
+                
+                <div class="section section-2">
+                    <div class="content">
+                        <a href="projects_detailed.html">
+                            <img src="https://i.pinimg.com/736x/0f/e1/eb/0fe1eb0c348e2c2f2c6ab8e25901d859.jpg" alt="ParkingTicket">
+                            <h2>ParkingTicket</h2>
+                            <p>Branding and Identity</p>
+                        </a>
+                    </div>
+                </div>
+        
+                
+                <div class="section section-3">
+                    <div class="content">
+                        <a href="projects_detailed.html">
+                            <img src="https://i.pinimg.com/736x/35/02/cd/3502cd4767a96c6e8c05ef56e83b289f.jpg" alt="Editorial Design">
+                            <h2>Vogue - Double Spread Magazine</h2>
+                            <p>Editorial Design</p>
+                        </a>
+                    </div>
+                </div>
+        
+                
+                <div class="section section-4">
+                    <div class="content">
+                        <a href="projects_detailed.html">
+                            <img src="https://i.pinimg.com/736x/ac/e9/f9/ace9f983636b3c04e9e01adc942a5b89.jpg" alt="Postcard Design">
+                            <h2>Postcard Design</h2>
+                            <p>Graphic Design</p>
+                        </a>
+                    </div>
+                </div>
+        
+                
+                <div class="section section-5">
+                    <div class="content">
+                        <a href="projects_detailed.html">
+                            <img src="https://i.pinimg.com/736x/ec/e8/f0/ece8f0721183088ba2a9a6f830447f91.jpg" alt="FYRE - Smart Kitchen Automation">
+                            <h2>FYRE - Smart Kitchen Automation</h2>
+                            <p>UI/UX</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <a href="index.html">
+            <img src="https://i.pinimg.com/736x/4f/f9/92/4ff992f99581e5dea60518ea890dd6e4.jpg" alt="Atelier de Saanvi Logo" class="footer-logo">
+        </a>
+        <div class="footer-content">
+            <p>Ready to collaborate? <img src="https://i.pinimg.com/736x/88/e3/e9/88e3e9bf220321274f4245f2d323c8f2.jpg" alt="Icon" class="footer-mail"> <a href="mailto:saanvikirand@gmail.com">saanvikirand@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
